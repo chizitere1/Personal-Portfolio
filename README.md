@@ -7,7 +7,6 @@ A personal portfolio showcasing my web development skills, projects, and experie
 - JavaScript
 
 ## View Live Version:
-Visit the live version of my portfolio: [your GitHub Pages URL here]
+Visit the live version of my portfolio: 
 
-## License:
-MIT License
+<h1>www.chizitere.net</h1>  
