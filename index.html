@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chizitere's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <!--<li><a href="#portfolio">Portfolio</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hello, I'm <br><span>Chizitere</span> <span1>Casmir Ezikeoha</span1></h1>
+            <div class="cta-container">
+                <div class="top-social-size">
+                <div class="social-icons">
+                <a href="https://www.linkedin.com/in/chizitere"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/chizitere1"><i class="fa-brands fa-github"></i></a>
+                <a href="https://stockton.joinhandshake.com/profiles/d37p99"><img src="images/handshake.png" width="35px"></a>
+                </div>
+                </div>
+                <div><a href="#resume" download class="btn btn2">View Résumé</a></div>
+                <div><a href="#contact" class="btn btn2">Let's Connect!</a></div>
+            </div>    
+        </div>
+    </div>
+ </div>
+<!-- ---------------about---------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+            I am Chizitere Casmir Ezikeoha, a driven Computer Science student at Stockton University with a passion for building intuitive and impactful digital experiences, software and IT solutions
+            that empower people and solve real-world problems through technology.
+          </p>
+          <p>
+           <br> With a strong foundation in software engineering, IT systems, data structures, algorithms, and full‑stack web development, I thrive at the intersection of problem-solving and impact.
+          </p>
+          <p>
+           <br>  I believe in technology that empowers people, whether through thoughtful software engineering, smart system design, or reliable IT support; Whether I'm debugging code, setting up secure networks, or mentoring peers, I believe in the power of tech to create access, equity, and opportunity.
+          </p>
+                <p>
+                    <br> I am currently open to internships, tech projects, and collaborative opportunities where I can bring value, grow, and make an impact. I'm eager to contribute, learn, and grow in environments that demand excellence, creativity, and passion.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+    <li><span>Software Development</span><br>Java, Python, HTML/CSS, JavaScript</li>
+    <li><span>Problem Solving</span><br>Algorithms, data structures, debugging, testing (JUnit)</li>
+    <li><span>IT Systems & Support</span><br>Hardware/software troubleshooting, networking, documentation</li>
+    <li><span>Web & App Development</span><br>Responsive design, Git, GitHub, REST APIs</li>
+    <li><span>Tools & Design</span><br>VS Code, Figma, Javadoc, Eclipse, PyCharm, IntelliJ</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+    <li><span>IT Student Intern</span><br>Hands-on technical training with systems support, network setup, documentation</li>
+    <li><span>Office Asistant at Stockton University's Provost's Office</span><br>Provided clerical, technical, and organizational support to academic leadership</li>
+    <li><span>Residential Assistant at Stockton University</span><br>Manage 17+ freshmen, resolve issues, facilitate tech help, lead community building</li>
+    <li><span>Leadership Roles</span><br>Vice PP - NAACP, Treasurer - Residence Hall Association, Ambassador - Stockton Honors</li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+    <li><span1>Stockton University</span1><br>B.S. Computer Science (Honors), Minor in Mathematics</li>
+    <li><span>Awards</span><br> Deans Lists, First Year Excellence Award & Good Citizenship Award</li>
+    <li><span>Honor Societies</span><br>Alpha Lambda Delta, Stockton Honors College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--- -------------services---------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+    <div>
+        <i class="fa-solid fa-robot"></i>
+        <h2>Problem Solving & Automation</h2>
+        <p>With a strong foundation in Data Structrures, Algorithms and recursion, I create optimized solutions to automate tasks and reduce manual effort. I enjoy tackling complex bugs and turning chaos into clarity.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-network-wired"></i>
+        <h2>IT Systems & Troubleshooting</h2>
+        <p>From installing software and setting up hardware to resolving network and device issues, I provide reliable technical support to improve operational efficiency and user experience.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-laptop-code"></i>
+        <h2>Full-Stack Web Development</h2>
+        <p>I build responsive, dynamic, and user-friendly web applications using HTML, CSS, JavaScript, and Java. I integrate frontend design with backend logic to deliver seamless functionality across devices.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+    <i class="fa-solid fa-users-gear"></i>
+    <h2>Technical Communication & Team Leadership</h2>
+    <p>Whether collaborating on projects, mentoring peers, or leading student organizations, I bridge the gap between technical solutions and human understanding — making technology approachable and impactful.</p>
+    <a href="#">Learn more</a>
+    </div>
+    </div>
+    </div>
+ </div>
+ <!---------portfolio----------------
+ <div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+           <div class="work">
+               <img src="images/work-1.png" alt="pic 1">
+               <div class="layer">
+                   <h3>Social Media App</h3>
+                   <p>The a[p yudfvhdjs dsuhvsdbodjsd connects you tp talejbcdjfd
+                    dybdkndknmcldcknd</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+               </div>
+           </div>
+           <div class="work">
+               <img src="images/work-2.png" alt="pic 2">
+               <div class="layer">
+                   <h3>Music App</h3>
+                   <p>The a[p yudfvhdjs dsuhvsdbodjsd connects you tp talejbcdjfd
+                    dybdkndknmcldcknd</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+               </div>
+           </div>
+           <div class="work">
+               <img src="images/work-3.png" alt="pic 3">
+               <div class="layer">
+                   <h3>Online shopping App</h3>
+                   <p>The a[p yudfvhdjs dsuhvsdbodjsd connects you tp talejbcdjfd
+                    dybdkndknmcldcknd</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+               </div>
+           </div>
+       </div>
+       <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+-->
+ <!-- ----------contact------------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ezikeohc@go.stockton.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i>(609) 517-8351</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/chizitere"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/chizitere1"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://stockton.joinhandshake.com/profiles/d37p99"><img src="images/handshake.png" width="35px"></a>
+                </div>
+                <a id="resume" href="images/my-cv.pdf" download class="btn btn2">Download Résumé</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+  </div>
+    <div class="pdf-viewer">
+        <iframe src="images/my-cv.pdf" class="pdf-frame"></iframe>
+    </div>
+    <div class="copyright">
+        <p id="copyright-text"></p>
+    </div>
+<script>
+
+    const startYear = 2025;
+    const currentYear = new Date().getFullYear();
+    const copyrightText = document.getElementById("copyright-text");
+    if (currentYear === startYear) {
+        copyrightText.textContent = `Copyright © ${startYear} Chizitere. Hello World! Hire Me!`;
+    } else {
+        copyrightText.textContent = `Copyright © ${startYear} - ${currentYear} Chizitere. Hello World! Hire Me!`;
+    }
+</script>
+    </div>
+  </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+        function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwJu4wFcrckAxhSX1Dt-IoAT1TiwNg1aPV1IYnwewhVokn-TUfiVWVLw38xqZ41MVoyRA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+ </script>
+</body>
+</html>
