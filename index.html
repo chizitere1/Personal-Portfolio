@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chizitere's Portfolio</title>
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -261,5 +262,35 @@
       .catch(error => console.error('Error!', error.message))
   })
  </script>
+ <script>
+let lastScrollY = window.pageYOffset;
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  const currentY = window.pageYOffset;
+
+  /* Hide when scrolling down, show when scrolling up */
+  if (currentY > lastScrollY && currentY > 100) {
+    nav.style.transform = 'translateY(-120%)';
+  } else {
+    nav.style.transform = 'translateY(0)';
+  }
+
+  if (currentY <= 10) {
+  nav.classList.remove('show-shadow');
+} else {
+  nav.classList.add('show-shadow');
+}
+
+if (currentY <= 10) {
+    nav.classList.remove('scrolled');
+  } else {
+    nav.classList.add('scrolled');
+  }
+
+  lastScrollY = currentY;
+});
+</script>
+
 </body>
 </html>
