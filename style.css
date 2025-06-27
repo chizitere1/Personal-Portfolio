@@ -474,7 +474,7 @@ form btn2{
     margin-top: 20px;
     color: #8b949e;
 }
-
+.mobile-break { display:none; }
 
 /*------------------css for small screens-------------------- */
 nav .fa-solid{
@@ -564,8 +564,11 @@ nav .fa-solid{
     width: 95%;
     height: 80vh;
   }
-
+  .mobile-break{ 
+    display:inline; 
+  }
 }
+
 #msg{
     color: #61b752;
     margin-top: -40px;
